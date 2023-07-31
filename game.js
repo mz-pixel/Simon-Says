@@ -7,7 +7,7 @@ var level = 0;
 $(document).keypress(function () {
   if (!started) {
     $("#level-title").text("Level " + level);
-    setTimeout(nextSequence(), 500);
+    setTimeout(nextSequence, 500);
     started = true;
   }
 });
@@ -15,7 +15,7 @@ $(document).keypress(function () {
 document.addEventListener("touchstart", function () {
   if (!started) {
     $("#level-title").text("Level " + level);
-    setTimeout(nextSequence(), 500);
+    setTimeout(nextSequence, 500);
     started = true;
   }
 });
