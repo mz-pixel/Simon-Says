@@ -12,10 +12,10 @@ $(document).keypress(function () {
   }
 });
 
-$(document).on("touchstart", function () {
+document.addEventListener("touchstart", function () {
   if (!started) {
     $("#level-title").text("Level " + level);
-    setTimeout(nextSequence, 500);
+    setTimeout(nextSequence(), 500);
     started = true;
   }
 });
