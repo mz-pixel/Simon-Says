@@ -12,7 +12,7 @@ $(document).keypress(function () {
   }
 });
 
-$(document).touchstart(function () {
+$(document).on("touchstart", function () {
   if (!started) {
     $("#level-title").text("Level " + level);
     setTimeout(nextSequence, 500);
